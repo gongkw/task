@@ -4,7 +4,7 @@ def quick_sort(A):
 def quick_sort2(A,low,hi):
     if low < hi:
         p = partition(A,low,hi)
-        quick_sort2(A,low,hi)
+        quick_sort2(A,low,p-1)
         quick_sort2(A,p+1,hi)
 
 def get_pivot(A,low,hi):
